@@ -29,7 +29,7 @@ Go To Registration Page
 
 *** Test Cases ***
 UAT-Lab04-002-06 Invalid Phone Number
-    [Documentation]    Phone ไม่ถูกต้อง
+    [Documentation]    UAT-Lab04-002: Phone ไม่ถูกต้อง
     Go To Registration Page
     Input Text    id:firstname    Somyod
     Input Text    id:lastname     Sodsai
