@@ -4,20 +4,21 @@ Library   SeleniumLibrary
 Suite Setup   Open Browser To Registration Page
 
 *** Variables ***
-${URL}        file:///D:/MYPIC/ComSciP3T2/CP353004_Lab/TestAutomationLab_663380026-5/StarterFiles/Registration.html
+${SERVER}     http://localhost:7072
+${LAB_PATH}   /Registration.html
 ${BROWSER}   Chrome
 ${DELAY}     0.1s
 
 *** Keywords ***
 Open Browser To Registration Page
-    Open Browser    ${URL}   ${BROWSER}
+    Open Browser    ${SERVER}${LAB_PATH}   ${BROWSER}
     Maximize Browser Window
     Set Selenium Speed    ${DELAY}
     Title Should Be  Registration
     Page Should Contain    Workshop Registration
 
 Go To Registration Page
-    Go To    ${URL}
+    Go To    ${SERVER}${LAB_PATH}
     Title Should Be  Registration
     Page Should Contain    Workshop Registration
     Clear Element Text    id:firstname
