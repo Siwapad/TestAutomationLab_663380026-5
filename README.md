@@ -17,14 +17,23 @@ https://drive.google.com/file/d/1vJIQcIWTXCVw0-9AT12OgJWoLbqJZrCA/view?usp=shari
 
 <img width="274" height="257" alt="image" src="https://github.com/user-attachments/assets/aa66221a-5581-4303-80e2-462eb13f87ff" />
 
-**3. ให้เปลี่ยน PATH ของ ${URL} ให้ตรงกับตำแหน่งที่ผู้ใช้ clone ไปไว้**
+**3. ให้ทำการใช้คำสั่ง cd ไปที่โฟลเดอร์ StarterFiles และให้ผู้ทดสอบใช้คำสั่ง ```python -m http.server 7072```**
 
-<img width="563" height="147" alt="image" src="https://github.com/user-attachments/assets/fde8987c-aa93-44bc-ae7c-f1f6dae841d9" />
+<img width="919" height="140" alt="image" src="https://github.com/user-attachments/assets/4823042c-ed18-4e2c-aaa5-cb3614f498e4" />
 
-**4. หลังจากเปลี่ยน PATH และทำการลง RobotFramework+SeliniumLibrary แล้วผู้ใช้สามารถใช้คำสั่ง robot เพื่อทดสอบไฟล์ .robot ทั้งหมดได้เลย**
+**4. หลังจากเปิดเซิร์ฟเวอร์แล้วผู้ทดสอบสามารถเลือกไฟล์ที่ต้องการจะทดสอบได้โดยการสร้าง terminal ขึ้นมา 1 ตัวและใช้คำสั่ง robot <ชื่อไฟล์ที่ทางผู้จัดทำตั้งไว้ให้>**
 
-<img width="839" height="252" alt="image" src="https://github.com/user-attachments/assets/47aae1ad-d4eb-4086-9737-96bdeb6e810b" />
+<img width="845" height="235" alt="image" src="https://github.com/user-attachments/assets/f490835b-2c52-4fcc-a2be-4601a544f717" /> 
 
+**5. เมื่อ robotFramwork ทำการทดสอบเสร็จจะได้ไฟล์ log.html, report.html, output.xml และไฟล์ screenshot 1-2 ไฟล์**
+
+<img width="275" height="61" alt="image" src="https://github.com/user-attachments/assets/23314c33-615b-478a-b769-0b71561cbc99" />
+<img width="284" height="56" alt="image" src="https://github.com/user-attachments/assets/872825b7-222b-4f7c-9184-ecd0c0bf74ce" />
+
+ตัวอย่างหน้า screenshot ของ selenium
+<img width="1920" height="893" alt="image" src="https://github.com/user-attachments/assets/1169be84-b705-4bee-a052-c77ecf892e9b" />
+
+**หมายเหตุ : ไฟล์ report ทั้งหมดถูกจัดเก็บไว้ในแต่ละโฟลเดอร์แล้ว สามารถเข้าดูได้ครับ**
 
 ---
 
