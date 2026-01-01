@@ -5,7 +5,7 @@ Suite Setup   Open Browser To Registration Page
 
 *** Variables ***
 ${SERVER}     http://localhost:7072
-${LAB_PATH}   /Registration.html
+${LAB_PATH}   /StarterFiles/Registration.html
 ${BROWSER}   Chrome
 ${DELAY}     0.1s
 
