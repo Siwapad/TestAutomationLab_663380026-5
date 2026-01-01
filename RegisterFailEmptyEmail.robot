@@ -29,7 +29,7 @@ Go To Registration Page
     Run Keyword And Ignore Error    Clear Element Text    id:errors
 
 *** Test Cases ***
-UAT-Lab04-002-04 Empty Email
+UAT-Lab04-002-03 Empty Email
     [Documentation]    UAT-Lab04-002: Email ว่าง
     Go To Registration Page
     Input Text    id:firstname    Somyod

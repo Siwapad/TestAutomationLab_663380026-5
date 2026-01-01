@@ -1,206 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.14.0 on win32)" generated="2025-12-27T23:25:03.181409" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.14.0 on win32)" generated="2026-01-01T16:55:47.863871" rpa="false" schemaversion="5">
 <suite id="s1" name="RegisterFailEmptyLName" source="D:\MYPIC\ComSciP3T2\CP353004_Lab\TestAutomationLab_663380026-5\RegisterFailEmptyLName.robot">
-<kw name="Open Browser To Registration Page" type="SETUP">
+<test id="s1-t1" name="UAT-Lab04-002-02 Empty Last Name" line="11">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:03.532013" level="INFO">Opening browser 'Chrome' to base url 'file:///D:/MYPIC/ComSciP3T2/CP353004_Lab/TestAutomationLab_663380026-5/StarterFiles/Registration.html'.</msg>
-<arg>${URL}</arg>
+<msg time="2026-01-01T16:55:48.237453" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7072/StarterFiles/Registration.html'.</msg>
+<arg>${SERVER}${LAB_PATH}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-27T23:25:03.531714" elapsed="1.372488"/>
+<status status="PASS" start="2026-01-01T16:55:48.237045" elapsed="1.329853"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-27T23:25:04.904467" elapsed="0.038003"/>
+<status status="PASS" start="2026-01-01T16:55:49.567368" elapsed="0.040297"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>${DELAY}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-12-27T23:25:04.942719" elapsed="0.000437"/>
-</kw>
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:05.051334" level="INFO">Page title is 'Registration'.</msg>
-<arg>Registration</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-12-27T23:25:04.943295" elapsed="0.108216"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:05.267360" level="INFO">Current page contains text 'Workshop Registration'.</msg>
-<arg>Workshop Registration</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-12-27T23:25:05.051738" elapsed="0.215754"/>
-</kw>
-<status status="PASS" start="2025-12-27T23:25:03.531002" elapsed="1.736622"/>
-</kw>
-<test id="s1-t1" name="UAT-Lab04-002-02 Empty Last Name" line="31">
-<kw name="Go To Registration Page">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:05.268988" level="INFO">Opening url 'file:///D:/MYPIC/ComSciP3T2/CP353004_Lab/TestAutomationLab_663380026-5/StarterFiles/Registration.html'</msg>
-<arg>${URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-12-27T23:25:05.268838" elapsed="0.116533"/>
-</kw>
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:05.489934" level="INFO">Page title is 'Registration'.</msg>
-<arg>Registration</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-12-27T23:25:05.385586" elapsed="0.104489"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:05.700945" level="INFO">Current page contains text 'Workshop Registration'.</msg>
-<arg>Workshop Registration</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-12-27T23:25:05.490260" elapsed="0.210980"/>
-</kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>id:firstname</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-27T23:25:05.701625" elapsed="0.244918"/>
-</kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>id:lastname</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-27T23:25:05.946749" elapsed="0.228409"/>
-</kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>id:organization</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-27T23:25:06.175365" elapsed="0.228706"/>
-</kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>id:email</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-27T23:25:06.404343" elapsed="0.228904"/>
-</kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>id:phone</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-27T23:25:06.633454" elapsed="0.245074"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:07.197505" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-12-27T23:25:07.197713" level="FAIL">InvalidElementStateException: Message: invalid element state
-  (Session info: chrome=143.0.7499.147)
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff656f688e5
-	0x7ff656f68940
-	0x7ff656d41465
-	0x7ff656d8f263
-	0x7ff656dc1fda
-	0x7ff656d8c746
-	0x7ff656deac97
-	0x7ff656d8ac29
-	0x7ff656d8ba93
-	0x7ff657280640
-	0x7ff65727af80
-	0x7ff6572996e6
-	0x7ff656f85de4
-	0x7ff656f8ed8c
-	0x7ff656f72004
-	0x7ff656f721b5
-	0x7ff656f57ee2
-	0x7fff97bce8d7
-	0x7fff9852c53c
-</msg>
-<arg>id:errors</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-12-27T23:25:06.879244" elapsed="0.323351">InvalidElementStateException: Message: invalid element state
-  (Session info: chrome=143.0.7499.147)
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff656f688e5
-	0x7ff656f68940
-	0x7ff656d41465
-	0x7ff656d8f263
-	0x7ff656dc1fda
-	0x7ff656d8c746
-	0x7ff656deac97
-	0x7ff656d8ac29
-	0x7ff656d8ba93
-	0x7ff657280640
-	0x7ff65727af80
-	0x7ff6572996e6
-	0x7ff656f85de4
-	0x7ff656f8ed8c
-	0x7ff656f72004
-	0x7ff656f721b5
-	0x7ff656f57ee2
-	0x7fff97bce8d7
-	0x7fff9852c53c
-</status>
-</kw>
-<arg>Clear Element Text</arg>
-<arg>id:errors</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-12-27T23:25:06.878757" elapsed="0.323967"/>
-</kw>
-<status status="PASS" start="2025-12-27T23:25:05.268549" elapsed="1.934270"/>
+<status status="PASS" start="2026-01-01T16:55:49.608668" elapsed="0.000387"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:07.203338" level="INFO">Typing text 'Somyod' into text field 'id:firstname'.</msg>
+<msg time="2026-01-01T16:55:49.609712" level="INFO">Typing text 'Somyod' into text field 'id:firstname'.</msg>
 <arg>id:firstname</arg>
 <arg>Somyod</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-27T23:25:07.203090" elapsed="0.417367"/>
+<status status="PASS" start="2026-01-01T16:55:49.609311" elapsed="0.418726"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:07.621158" level="INFO">Typing text 'CS KKU' into text field 'id:organization'.</msg>
+<msg time="2026-01-01T16:55:50.028929" level="INFO">Typing text 'CS KKU' into text field 'id:organization'.</msg>
 <arg>id:organization</arg>
 <arg>CS KKU</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-27T23:25:07.620863" elapsed="0.400051"/>
+<status status="PASS" start="2026-01-01T16:55:50.028565" elapsed="0.401330"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:08.021555" level="INFO">Typing text 'somyod@kkumail.com' into text field 'id:email'.</msg>
+<msg time="2026-01-01T16:55:50.430568" level="INFO">Typing text 'somyod@kkumail.com' into text field 'id:email'.</msg>
 <arg>id:email</arg>
 <arg>somyod@kkumail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-27T23:25:08.021305" elapsed="0.392617"/>
+<status status="PASS" start="2026-01-01T16:55:50.430307" elapsed="0.401121"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:08.414557" level="INFO">Typing text '091-001-1234' into text field 'id:phone'.</msg>
+<msg time="2026-01-01T16:55:50.832210" level="INFO">Typing text '091-001-1234' into text field 'id:phone'.</msg>
 <arg>id:phone</arg>
 <arg>091-001-1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-27T23:25:08.414305" elapsed="0.380388"/>
+<status status="PASS" start="2026-01-01T16:55:50.831919" elapsed="0.415140"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:08.795322" level="INFO">Clicking button 'id:registerButton'.</msg>
+<msg time="2026-01-01T16:55:51.247705" level="INFO">Clicking button 'id:registerButton'.</msg>
 <arg>id:registerButton</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-27T23:25:08.795079" elapsed="0.362365"/>
+<status status="PASS" start="2026-01-01T16:55:51.247460" elapsed="0.412643"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:09.262164" level="INFO">Page title is 'Registration'.</msg>
+<msg time="2026-01-01T16:55:51.765537" level="INFO">Page title is 'Registration'.</msg>
 <arg>Registration</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-12-27T23:25:09.157831" elapsed="0.104463"/>
+<status status="PASS" start="2026-01-01T16:55:51.660591" elapsed="0.105080"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:09.473318" level="INFO">Current page contains text 'Workshop Registration'.</msg>
+<msg time="2026-01-01T16:55:51.978562" level="INFO">Current page contains text 'Workshop Registration'.</msg>
 <arg>Workshop Registration</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-12-27T23:25:09.262635" elapsed="0.210809"/>
+<status status="PASS" start="2026-01-01T16:55:51.766145" elapsed="0.212589"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-12-27T23:25:09.474056" level="INFO">Verifying element 'id:errors' contains exact text 'Please enter your last name!!'.</msg>
-<msg time="2025-12-27T23:25:09.877283" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-12-27T23:25:09.877490" level="FAIL">The text of element 'id:errors' should have been 'Please enter your last name!!' but it was '*Please enter your last name!!'.</msg>
+<msg time="2026-01-01T16:55:51.979437" level="INFO">Verifying element 'id:errors' contains exact text 'Please enter your last name!!'.</msg>
+<msg time="2026-01-01T16:55:52.401977" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-01T16:55:52.402238" level="FAIL">The text of element 'id:errors' should have been 'Please enter your last name!!' but it was '*Please enter your last name!!'.</msg>
 <arg>id:errors</arg>
 <arg>Please enter your last name!!</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="FAIL" start="2025-12-27T23:25:09.473792" elapsed="0.404568">The text of element 'id:errors' should have been 'Please enter your last name!!' but it was '*Please enter your last name!!'.</status>
+<status status="FAIL" start="2026-01-01T16:55:51.979122" elapsed="0.425512">The text of element 'id:errors' should have been 'Please enter your last name!!' but it was '*Please enter your last name!!'.</status>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-12-27T23:25:09.878847" elapsed="0.000051"/>
+<status status="NOT RUN" start="2026-01-01T16:55:52.405118" elapsed="0.000074"/>
 </kw>
 <doc>UAT-Lab04-002: Last Name ว่าง</doc>
-<status status="FAIL" start="2025-12-27T23:25:05.267743" elapsed="4.611421">The text of element 'id:errors' should have been 'Please enter your last name!!' but it was '*Please enter your last name!!'.</status>
+<status status="FAIL" start="2026-01-01T16:55:48.235701" elapsed="4.169808">The text of element 'id:errors' should have been 'Please enter your last name!!' but it was '*Please enter your last name!!'.</status>
 </test>
-<status status="FAIL" start="2025-12-27T23:25:03.183116" elapsed="6.696806"/>
+<status status="FAIL" start="2026-01-01T16:55:47.865654" elapsed="4.540736"/>
 </suite>
 <statistics>
 <total>
